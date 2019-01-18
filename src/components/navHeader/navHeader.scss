@@ -1,0 +1,79 @@
+.nav-header {
+    width: 100%;
+    height: 120px;
+    background: url("./../../static/images/topBg.png") left top no-repeat;
+    background-size: cover;
+    // border-bottom: 1px solid #ddd;
+    font-size: 0px;
+    text-align: center;
+    position: relative;
+
+    .logo {
+        display: inline-block;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 2.5rem;
+            vertical-align: middle;
+        }
+    }
+
+    .store-name {
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .end-time {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 10px;
+        color: #d2d2d2;
+    }
+
+    .get-time {
+        display: inline-block;
+        font-size: 17px;
+        color: #f5dc21;
+        cursor: pointer;
+    }
+
+    .setting-emp {
+        position: absolute;
+        top: 62px;
+        right: 20px;
+
+        button {
+            font-size: 16px;
+            color: #fff;
+            width: 130px;
+            height: 32px;
+            border-radius: 16px;
+            line-height: 32px;
+            background: #095aac;
+            cursor: pointer;
+        }
+    }
+
+    .set-free-time {
+        position: absolute;
+        top: 62px;
+        left: 20px;
+
+        button {
+            font-size: 16px;
+            color: #fff;
+            min-width: 130px;
+            padding: 0 10px;
+            height: 32px;
+            border-radius: 16px;
+            line-height: 32px;
+            background: #095aac;
+            cursor: pointer;
+        }
+    }
+}

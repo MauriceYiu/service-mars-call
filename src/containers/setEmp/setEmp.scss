@@ -1,0 +1,109 @@
+.set-emp {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 1.8rem;
+
+    .list-warp {
+        height: calc(100% - 170px);
+
+        table {
+            tr {
+                background: #c4cce2;
+
+                th {
+                    padding: 1rem;
+                    // border-left: 1px solid #ddd;
+                }
+
+                td {
+                    height: 60px;
+                    // border-left: 1px solid #ddd;
+                }
+            }
+        }
+
+        table.table-tit {
+            height: 50px;
+
+            th {
+                height: 50px;
+                font-size: 18px;
+                color: #333;
+                font-weight: 500;
+            }
+        }
+
+        .cont {
+            height: 100%;
+            overflow-y: scroll;
+            margin-right: -18px;
+
+            .table-cont {
+                tr {
+                    background: #fff;
+
+                    &:nth-child(even) {
+                        background: #eeeff3;
+                    }
+
+                    &:last-child {
+                        td {
+                            border-bottom: 1px solid #ddd !important;
+                        }
+                    }
+
+                    .change-status {
+                        color: #27a9f4;
+                        cursor: pointer;
+
+                        &.out-work {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .free-time-mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .3);
+
+        .free-time-wrap {
+            max-width: 35rem;
+            max-height: 20rem;
+            padding: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            background: #fff;
+            text-align: center;
+
+            .tit {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+
+            button {
+                margin-top: 1rem;
+                vertical-align: middle;
+                font-size: 1.6rem;
+                color: #fff;
+                width: 10rem;
+                padding: .5rem;
+                line-height: 2rem;
+                border-radius: 5px;
+                background: rgb(0, 159, 252);
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.pay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    font-size: 0;
+
+    .pay-wrap {
+        width: 620px;
+        height: 400px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .pay-tit {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #27a9f4;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+
+            .clock {
+                font-size: 18px;
+                position: absolute;
+                right: 20px;
+            }
+
+            .arrow-back {
+                height: 36px;
+                line-height: 36px;
+                border: 1px solid #f0f0f0;
+                border-radius: 18px;
+                padding: 0 20px;
+                font-size: 16px;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translate(0, -50%);
+            }
+        }
+
+        .pay-count {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+
+            span {
+                display: inline-block;
+            }
+
+            b {
+                font-size: 22px;
+                font-weight: 500;
+                color: red;
+            }
+        }
+
+        .sel-pay-type {
+            margin-top: 48px;
+            text-align: center;
+
+            .pay-type {
+                display: inline-block;
+                font-size: 20px;
+                width: 154px;
+                height: 180px;
+                color: #fff;
+                border-radius: 9px;
+                cursor: pointer;
+
+                .icont-wrap {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    line-height: 34px;
+
+                    i {
+                        display: inline-block;
+                        font-size: 80px;
+                    }
+
+                    .pay-name {
+                        display: block;
+                        text-align: center;
+                    }
+
+
+                }
+
+                &.ali {
+                    background: #55a8dc;
+                    margin-right: 50px;
+                    position: relative;
+                }
+
+                &.wechat {
+                    background: #6fcd58;
+                    position: relative;
+                }
+            }
+        }
+
+        .pay-code {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #666;
+
+            .pay-code-tit {
+                text-align: center;
+            }
+
+            .code {
+                display: inline-block;
+                margin-top: 30px;
+                text-align: center;
+                width: 100%;
+                height: 148px;
+
+                img {
+                    width: 148px;
+                    height: 100%;
+                }
+            }
+
+            .close-button {
+                margin-top: 40px;
+                text-align: center;
+
+                button {
+                    width: 180px;
+                    height: 40px;
+                    border-radius: 20px;
+                    color: #fff;
+                    background: #27a9f4;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
